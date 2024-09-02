@@ -33,18 +33,21 @@ public class Watches2 {
 
 	@When("Select Branded checkbox")
 	public void select_branded_checkbox() {
-		driver.findElement(By.xpath("(//a[@href='/shop-online/jewellery-watches/watches.html'])[2]")).click();
+		driver.findElement(By.cssSelector("[id='brandFilterBox8313']")).click();
 	}
 
 	@When("Compare Branded two products on the Watches page")
 	public void compare_branded_two_products_on_the_watches_page() {
+		driver.findElement(By.cssSelector("[id='cpid12613071']")).click();
+		driver.findElement(By.cssSelector("[id='cpid12613026']")).click();
+		driver.findElement(By.linkText("Compare Now")).click();
 		
 	 	}
 
 	@Then("Branded Comparison results should be displayed")
 	public void branded_comparison_results_should_be_displayed() {
-		String actualText = driver.findElement(By.xpath("(//td[@valign='top'])[1]")).getText();
-		String expectedText="Comparing 2 similar products";
+		String actualText = driver.findElement(By.linkText("Golden Watch with Golden Chain + Bracelet + Ring (MGWCBR10)")).getText();
+		String expectedText="Golden Watch with Golden Chain + Bracelet + Ring (MGWCBR10)";
 	   
 			Assert.assertEquals(actualText, expectedText);
 	}

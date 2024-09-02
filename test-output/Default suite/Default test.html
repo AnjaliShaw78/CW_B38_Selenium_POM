@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 01 17:44:28 IST 2024</td>
+<td>Started on:</td><td>Mon Sep 02 14:18:02 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>54 seconds (54585 ms)</td>
+<tr><td>Total time:</td><td>397 seconds (397491 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,73 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page  Analog checkbox functionality", "WatchesPage feature"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[id=&apos;cpid12610395&apos;]&quot;}
+  (Session info: chrome=128.0.6613.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a35f1d0f20edf6474c89bf0a5fb16c33, findElement {using=css selector, value=[id=&apos;cpid12610395&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.86, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\beati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52719}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52719/devtoo..., se:cdpVersion: 128.0.6613.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a35f1d0f20edf6474c89bf0a5fb16c33
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at steps.Watches10.compare_analog_two_products_on_the_watches_page(Watches10.java:48)
+	at ✽.Compare Analog two products on the Watches page(file:///C:/Users/beati/Documents/workspace-spring-tool-suite-4-4.23.1.RELEASE/Cucumber_Naaptol/src/test/resources/JewelleryAndWatches/Watches10.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2091684862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2091684862'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[id=&apos;cpid12610395&apos;]&quot;}
+  (Session info: chrome=128.0.6613.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a35f1d0f20edf6474c89bf0a5fb16c33, findElement {using=css selector, value=[id=&apos;cpid12610395&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.86, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\beati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52719}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52719/devtoo..., se:cdpVersion: 128.0.6613.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a35f1d0f20edf6474c89bf0a5fb16c33
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at steps.Watches10.compare_analog_two_products_on_the_watches_page(Watches10.java:48)
+	at ✽.Compare Analog two products on the Watches page(file:///C:/Users/beati/Documents/workspace-spring-tool-suite-4-4.23.1.RELEASE/Cucumber_Naaptol/src/test/resources/JewelleryAndWatches/Watches10.feature:9)
+</pre></div></td>
+<td>22</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
 <td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Abrexo checkbox functionality", "WatchesPage feature"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input id=&quot;cpid12612354&quot; type=&quot;checkbox&quot; class=&quot;v_bottom&quot; cpid=&quot;12612354&quot; catid=&quot;142&quot; pname=&quot;Golden Watch + 2 Golden Chain + Bracelet + Diamond Ring (MGW2CBR)&quot; pimage=&quot;Golden-Watch-2-Golden-Chain-Bracelet-Diamond-Ring-MGW2CBR-1.jpg&quot; catname=&quot;Watches&quot; onclick=&quot;productCompare.addToCompare(this);&quot; sid=&quot;null&quot; sname=&quot;null&quot; tt=&quot;H&quot;&gt; is not clickable at point (646, 526). Other element would receive the click: &lt;div class=&quot;catalogLoad&quot;&gt;...&lt;/div&gt;
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=128.0.6613.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e9fbc2e97daa926a4ed17d237fab687, clickElement {id=f.89459D2044AEE19857F06B426C94E243.d.789801F324A5AAB911D2700C61B282C8.e.7729}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.86, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\beati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56110}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56110/devtoo..., se:cdpVersion: 128.0.6613.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5e9fbc2e97daa926a4ed17d237fab687)] -&gt; css selector: [id=&apos;cpid12612354&apos;]]
-Session ID: 5e9fbc2e97daa926a4ed17d237fab687
+Command: [c70b3e39a844bfd4388132ec745b7df5, clickElement {id=f.94408D423BFAACAD94F0D46AC00013AE.d.C3C0FE48E6976557B8E53FDC5A2A7051.e.7791}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.86, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\beati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52628/devtoo..., se:cdpVersion: 128.0.6613.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c70b3e39a844bfd4388132ec745b7df5)] -&gt; css selector: [id=&apos;cpid12612354&apos;]]
+Session ID: c70b3e39a844bfd4388132ec745b7df5
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -98,18 +155,19 @@ Session ID: 5e9fbc2e97daa926a4ed17d237fab687
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at steps.Watches.compare_abrexo_two_products_on_the_watches_page(Watches.java:170)
+	at steps.Watches.compare_abrexo_two_products_on_the_watches_page(Watches.java:159)
 	at ✽.Compare Abrexo two products on the Watches page(file:///C:/Users/beati/Documents/workspace-spring-tool-suite-4-4.23.1.RELEASE/Cucumber_Naaptol/src/test/resources/JewelleryAndWatches/Watches.feature:36)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1335157064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1335157064'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input id=&quot;cpid12612354&quot; type=&quot;checkbox&quot; class=&quot;v_bottom&quot; cpid=&quot;12612354&quot; catid=&quot;142&quot; pname=&quot;Golden Watch + 2 Golden Chain + Bracelet + Diamond Ring (MGW2CBR)&quot; pimage=&quot;Golden-Watch-2-Golden-Chain-Bracelet-Diamond-Ring-MGW2CBR-1.jpg&quot; catname=&quot;Watches&quot; onclick=&quot;productCompare.addToCompare(this);&quot; sid=&quot;null&quot; sname=&quot;null&quot; tt=&quot;H&quot;&gt; is not clickable at point (646, 526). Other element would receive the click: &lt;div class=&quot;catalogLoad&quot;&gt;...&lt;/div&gt;
+</pre></div><a href='#' onClick='toggleBox("stack-trace2034460325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2034460325'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=128.0.6613.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e9fbc2e97daa926a4ed17d237fab687, clickElement {id=f.89459D2044AEE19857F06B426C94E243.d.789801F324A5AAB911D2700C61B282C8.e.7729}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.86, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\beati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56110}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56110/devtoo..., se:cdpVersion: 128.0.6613.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5e9fbc2e97daa926a4ed17d237fab687)] -&gt; css selector: [id=&apos;cpid12612354&apos;]]
-Session ID: 5e9fbc2e97daa926a4ed17d237fab687
+Command: [c70b3e39a844bfd4388132ec745b7df5, clickElement {id=f.94408D423BFAACAD94F0D46AC00013AE.d.C3C0FE48E6976557B8E53FDC5A2A7051.e.7791}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.86, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\beati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52628/devtoo..., se:cdpVersion: 128.0.6613.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c70b3e39a844bfd4388132ec745b7df5)] -&gt; css selector: [id=&apos;cpid12612354&apos;]]
+Session ID: c70b3e39a844bfd4388132ec745b7df5
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -122,10 +180,10 @@ Session ID: 5e9fbc2e97daa926a4ed17d237fab687
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at steps.Watches.compare_abrexo_two_products_on_the_watches_page(Watches.java:170)
+	at steps.Watches.compare_abrexo_two_products_on_the_watches_page(Watches.java:159)
 	at ✽.Compare Abrexo two products on the Watches page(file:///C:/Users/beati/Documents/workspace-spring-tool-suite-4-4.23.1.RELEASE/Cucumber_Naaptol/src/test/resources/JewelleryAndWatches/Watches.feature:36)
 </pre></div></td>
-<td>20</td>
+<td>16</td>
 <td>runner.Search@1033576a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -139,17 +197,67 @@ Session ID: 5e9fbc2e97daa926a4ed17d237fab687
 <tr>
 <td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page clear all functionality", "WatchesPage feature"</td>
 <td></td>
-<td>10</td>
+<td>16</td>
 <td>runner.Search@1033576a</td></tr>
 <tr>
-<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page compare functionality", "WatchesPage feature"</td>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page  House of Vellani checkbox functionality", "WatchesPage feature"</td>
 <td></td>
-<td>10</td>
+<td>18</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page  Digital checkbox functionality", "WatchesPage feature"</td>
+<td></td>
+<td>43</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate JewelleryAndWatch functionality", "JewelleryAndWatch feature"</td>
+<td></td>
+<td>18</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page Sukkhi checkbox functionality", "WatchesPage feature"</td>
+<td></td>
+<td>45</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page Women checkbox functionality", "WatchesPage feature"</td>
+<td></td>
+<td>18</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page Men checkbox functionality", "WatchesPage feature"</td>
+<td></td>
+<td>58</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page  Square checkbox functionality", "WatchesPage feature"</td>
+<td></td>
+<td>12</td>
 <td>runner.Search@1033576a</td></tr>
 <tr>
 <td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate WatchesPage Cash on Delivery functionality", "WatchesPage feature"</td>
 <td></td>
+<td>20</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page compare functionality", "WatchesPage feature"</td>
+<td></td>
 <td>12</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page Branded checkbox functionality", "WatchesPage feature"</td>
+<td></td>
+<td>45</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page  Rectangle checkbox functionality", "WatchesPage feature"</td>
+<td></td>
+<td>16</td>
+<td>runner.Search@1033576a</td></tr>
+<tr>
+<td title='runner.Search.runScenario()'><b>runScenario</b><br>Test class: runner.Search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Watches page  Round checkbox functionality", "WatchesPage feature"</td>
+<td></td>
+<td>30</td>
 <td>runner.Search@1033576a</td></tr>
 </table><p>
 </body>

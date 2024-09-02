@@ -3,7 +3,7 @@
 Feature: JewelleryAndWatch feature
   
 
-  @tag1
+  @Fifteenth
   Scenario: To validate JewelleryAndWatch functionality
     Given Open browser seclect JewelleryAndWatches url
     And Select Watch url
@@ -11,9 +11,10 @@ Feature: JewelleryAndWatch feature
     And Select Free Shipping
     When user enter pincode 
     And Select set button
-    And Compare two products of Watches
+    And Click JewelleryAndWatch url again
     Then Select Jewellery url
-    And Compare two products Of Jewellery
+    And Check title of the page
+    And Close the browser12
     
 
  # @tag2

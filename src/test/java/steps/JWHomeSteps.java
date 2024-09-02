@@ -3,6 +3,8 @@ package steps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -51,26 +53,33 @@ public class JWHomeSteps {
 
 	}
 
-	@When("Compare two products of Watches")
-	public void compare_two_products_of_watches() {
-		//watch 1
-		driver.findElement(By.cssSelector("[id='cpid12613301']")).click();
-		//watch 2
-		driver.findElement(By.cssSelector("[id='cpid12613382']")).click();
-		//select compare button
-		driver.findElement(By.linkText("Compare Now")).click();
-	 
-	}
 
-	@Then("Select Jewellery url")
-	public void select_jewellery_url() {
-	   
-	}
+@When("Click JewelleryAndWatch url again")
+public void click_jewellery_and_watch_url_again() {
+	driver.findElement(By.xpath("(//a[@href='/shop-online/jewellery-watches.html'])[2]")).click();
 
-	@Then("Compare two products Of Jewellery")
-	public void compare_two_products_of_jewellery() {
-	  
-	}
+}
+
+
+@Then("Select Jewellery url")
+public void select_jewellery_url() {
+  driver.findElement(By.xpath("(//a[@href='/shop-online/jewellery-watches/gems-jewellery.html'])[2]")).click();
+  
+}
+
+@Then("Check title of the page")
+public void check_title_of_the_page() {
+	SoftAssert s =new SoftAssert();
+	s.assertEquals(driver.getTitle(), "Jewellery Set - Buy Designer Jewellery Set Online in India at Best Price on Naaptol.com");
+	s.assertAll();
+
+
+}
+
+@Then("Close the browser12")
+public void close_the_browser12() {
+  driver.close();
+}
 
 
 
