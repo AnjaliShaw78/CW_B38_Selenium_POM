@@ -8,7 +8,11 @@
 ## Deplolyed App
 https://www.naaptol.com/
 ## Directory Structure
-## Daily-Practise-Automation testing/ |-e2e/ |-Assignments/ |-Construct week/ |-Naaptol-project/ |-Install sts/ |-Install Selenium jar file/
+## Naaptol-Automation/
+│
+├── settings/ |-src/ |-main/ |-java/ │-pageClasses/ |-test/ ├── java/ ├── generics/ │  └── test/ │ └── FinalTest.java ├── resources/ │ └── config.properties ├── target/ 
+|-test-output/ ├── .classpath ├── .project ├── README.md ├── pom.xml ├── report.html                        
+                       
 ## Tech Stack used
 ## Javascript Node.js,HTML,JAVA,CSS
 
