@@ -10,8 +10,7 @@ https://www.naaptol.com/
 ## Directory Structure
 ## Naaptol-Automation/
 │
-├── settings/ |-src/ |-main/ |-java/ │-pageClasses/ |-test/ ├── java/ ├── generics/ │  └── test/ │ └── FinalTest.java ├── resources/ │ └── config.properties ├── target/ 
-|-test-output/ ├── .classpath ├── .project ├── README.md ├── pom.xml ├── report.html                        
+├── settings/ |── src/ |── main/ |── java/ │── pageClasses/ |── test/ ├── java/ ├── generics/ │  └── test/ │ └── FinalTest.java ├── resources/ │ └── config.properties ├── target/ |── test-output/ ├── .classpath ├── .project ├── README.md ├── pom.xml ├── report.html                        
                        
 ## Tech Stack used
 ## HTML,JAVA,CSS,JavaScript
