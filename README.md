@@ -14,7 +14,7 @@ https://www.naaptol.com/
 |-test-output/ ├── .classpath ├── .project ├── README.md ├── pom.xml ├── report.html                        
                        
 ## Tech Stack used
-## HTML,JAVA,CSS
+## HTML,JAVA,CSS,JavaScript
 
 
 
